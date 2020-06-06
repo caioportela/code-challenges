@@ -1,13 +1,7 @@
 #!/bin/python3
 
 def build_grid(n):
-    grid = []
-    
-    for _ in range(n):
-        row = input().strip()
-        grid.append(*row)
-        
-    return grid
+    return [input() for _ in range(n)]
 
 def display_path_to_princess(n, grid):
     if 'p' in grid[0]:
