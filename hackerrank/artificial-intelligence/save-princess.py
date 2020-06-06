@@ -4,7 +4,7 @@ def build_grid(n):
     grid = []
     
     for _ in range(n):
-        row = input().split()
+        row = input().strip()
         grid.append(*row)
         
     return grid
